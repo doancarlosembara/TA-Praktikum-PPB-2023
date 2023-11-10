@@ -19,7 +19,7 @@ export default function MovieList({ title, hideSeeAll, data }) {
   return (
     <View style={{ marginBottom: 8, marginTop: 8 }}>
       <View style={{ marginLeft: 4, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Text style={{ color: 'white', fontSize: 18, paddingLeft: 10,paddinRight: 10,paddingBottom: 10 }}>{title}</Text>
+        <Text style={{ color: 'white', fontSize: 18, paddingLeft: 10,paddingRight: 10,paddingBottom: 10 }}>{title}</Text>
         {!hideSeeAll && (
           <TouchableOpacity onPress={navigateToAnotherScreen}>
             <Text style={[styles.text, { fontSize: 18 , padding: 10}]}>See All</Text>
